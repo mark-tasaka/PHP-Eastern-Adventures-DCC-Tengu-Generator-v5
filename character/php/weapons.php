@@ -44,7 +44,7 @@
     function getRandomWeapons()
     {
        
-        $weaponsArray = array(1, 2, 4, 5, 6, 8, 13, 17, 18, 20, 23, 24, 25, 26, 27, 28);
+        $weaponsArray = array(1, 2, 4, 5, 6, 8, 16, 17, 18, 20, 23, 28);
     
         //shuffle $weaponsArray
         shuffle($weaponsArray); 

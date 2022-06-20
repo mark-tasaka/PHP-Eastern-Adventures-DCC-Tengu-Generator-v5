@@ -98,16 +98,7 @@
     
         }
 
-        if(isset($_POST['theEasternTitle']) && $_POST['theEasternTitle'] == 1) 
-        {
-            $title = titleEastern($level, $gender);
-        }
-        else
-        {
-            $title = title($level, $alignment);
-        } 
-
-        
+        $title = title($level);
 
         
         $xpNextLevel = getXPNextLevel ($level);
@@ -354,17 +345,6 @@
 
        $tradeGoodsAddition = tradeGoodsAddition($profession, $trainedWeapon);
 
-       /*
-       if(isset($_POST["theLuckyWeapon"]))
-       {
-           $luckyWeaponNumberString = $_POST["theLuckyWeapon"];
-       } 
-
-       $luckyWeaponNumber = (int)$luckyWeaponNumberString;
-       $luckyWeapon = getWeapon($luckyWeaponNumber)[0];*/
-
-      // $tenguPath = gettenguPath($alignment);
-
        $backstabArray = getBackstabArray ();
        $backstab = $backstabArray[$level];
 
@@ -414,6 +394,8 @@
        $castSpellScrollArray = getCastSpellScrollArray ();
        $castSpellScroll = $castSpellScrollArray[$level];
        $modToCheckScroll = tenguSpellScrollMod ($intelligenceMod);
+
+       $luckRecovery = luckRecoveredDaily($level);
 
 
 
@@ -997,6 +979,10 @@
            ?></span>
 
        
+        <span id="luckRecovery">
+            <?php
+           echo $luckRecovery;
+           ?></span>
 
        
 	</section>

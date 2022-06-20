@@ -629,3 +629,10 @@ body{
     left: 555px;
     font-size: 0.8em;
 }
+
+#luckRecovery{
+    position:absolute;
+    top: 1072px;
+    left: 786px;
+    font-size: 0.8em;
+}

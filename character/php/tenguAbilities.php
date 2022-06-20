@@ -1,24 +1,9 @@
 <?php
-/*
-function gettenguPath()
-{
-    if( === "Lawful")
-    {
-        return "Path of the Boss";
-    }
-    else if( === "Neutral")
-    {
-        return "Path of the Swindler";
-    }
-    else
-    {
-        return "Path of the Assassin";
-    }
-}*/
+
 
 function getBackstabArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
     return $skill;
 
 }
@@ -26,7 +11,7 @@ function getBackstabArray ()
 
 function getSneakSilentlyArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 3, 5, 7, 8, 9, 11, 12, 13, 14, 15);
     return $skill;
 }
 
@@ -40,21 +25,21 @@ function getHideInShadowsArray ()
 
 function getPickPocketArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 3, 5, 7, 8, 9, 11, 12, 13, 14, 15);
     return $skill;
 }
 
 
 function getClimbArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 3, 5, 7, 8, 9, 11, 12, 13, 14, 15);
     return $skill;
 }
 
 
 function getPickLockArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 3, 5, 7, 8, 9, 11, 12, 13, 14, 15);
     return $skill;
 }
 
@@ -78,7 +63,7 @@ function getDisableTrapArray ()
 
 function getForgeDocArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 3, 5, 7, 8, 9, 11, 12, 13, 14, 15);
     return $skill;
 
 }
@@ -86,7 +71,7 @@ function getForgeDocArray ()
 
 function getDisguiseSelfArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     return $skill;
 }
 
@@ -94,7 +79,7 @@ function getDisguiseSelfArray ()
 
 function getReadLanguagesArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
     return $skill;
 }
 
@@ -102,14 +87,14 @@ function getReadLanguagesArray ()
 
 function getHandlePoisonArray ()
 {
-    $skill = array(0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13);
+    $skill = array(0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     return $skill;
 }
 
 
 function getCastSpellScrollArray ()
 {
-    $skill = array("", "d10", "d10", "d12", "d12", "d14", "d14", "d16", "d16", "d20", "d20");
+    $skill = array("", "d12", "d12", "d14", "d14", "d16", "d16", "d20", "d20", "d20", "d20");
     return $skill;
 
 }

@@ -306,114 +306,59 @@ function attackBonus ($level)
 }
 
 
-function title($level, $alignment)
-{
-    $title = "";
-
-    if($alignment == "Lawful")
-    {
-
-        if($level == 1)
-        {
-            $title = "Bravo";
-        }
-        else if($level == 2)
-        {
-            $title = "Apprentice";
-        }
-        else if($level == 3)
-        {
-            $title = "Rogue";
-        }
-        else if($level == 4)
-        {
-            $title = "Capo";
-        }
-        else
-        {
-            $title = "Boss";
-        }
-
-    }
-
-    if($alignment == "Neutral")
-    {
-        if($level == 1)
-        {
-            $title = "Beggar";
-        }
-        else if($level == 2)
-        {
-            $title = "Cutpurse";
-        }
-        else if($level == 3)
-        {
-            $title = "Burglar";
-        }
-        else if($level == 4)
-        {
-            $title = "Robber";
-        }
-        else
-        {
-            $title = "Swindler";
-        }
-    }
-
-    if($alignment == "Chaotic")
-    {
-        if($level == 1)
-        {
-            $title = "Thug";
-        }
-        else if($level == 2)
-        {
-            $title = "Murderer";
-        }
-        else if($level == 3)
-        {
-            $title = "Cutthroat";
-        }
-        else if($level == 4)
-        {
-            $title = "Executioner";
-        }
-        else
-        {
-            $title = "Assassin";
-        }
-    }
-
-return $title;
-
-}
-
-function titleEastern($level, $gender)
+function title($level)
 {
     $title = "";
 
     if($level == 1)
     {
-        $title = "Infiltrator";
+        $title = "Rascal";
     }
     else if($level == 2)
     {
-        $title = "Agent";
+        $title = "Trickster";
     }
     else if($level == 3)
     {
-        $title = "Saboteur";
+        $title = "Mischief-maker";
     }
     else if($level == 4)
     {
-        $title = "Assassin";
+        $title = "Sneak";
     }
     else
     {
-        $title = "Shinobi";
+        $title = "Rogue";
     }
 
-    return $title;
+
+return $title;
 
 }
+
+function luckRecoveredDaily($level)
+{
+    if($level == 1 || $level == 2)
+    {
+        return 1;
+    }
+    else if($level == 3 || $level == 4)
+    {
+        return 2;
+    }
+    else if($level == 5 || $level == 6)
+    {
+        return 3;
+    }
+    else if($level == 7 || $level == 8)
+    {
+        return 4;
+    }
+    else
+    {
+        return 5;
+    }
+
+}
+
 ?>
